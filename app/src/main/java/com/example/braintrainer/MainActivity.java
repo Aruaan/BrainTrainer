@@ -13,6 +13,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     Button goButton;
+
     Button answer1;
     Button answer2;
     Button answer3;
@@ -57,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
     public void playAgain(View v) {
         startOfGame();
         playAgainButton.setVisibility(View.INVISIBLE);
+        score=0;
+        numberOfQuestions=0;
+        scoreTextView.setText(score + "/" + numberOfQuestions);
 
     }
 
